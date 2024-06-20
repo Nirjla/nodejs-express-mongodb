@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors"
 import db from "./app/models/index.mjs";
+import routes from "./app/routes/index.route.mjs"
 const app = express();
 
 app.use(cors())
@@ -14,6 +15,8 @@ db.mongoose.connect(db.url).then(() => {
 }).catch(err => {
       console.log("Cannot connect to the database!", err);
 })
+
+app.use('/api',routes)
 
 app.get("/", (req, res) => {
       res.json({ message: "Welcome to nirjla's api" })

@@ -1,3 +1,3 @@
-const dbConfigUrl = "mongodb+srv://nirjla:prime123isPW@cluster0.nebzrfr.mongodb.net/";
+const dbConfigUrl = "mongodb+srv://nirjla:prime123isPW@tutorial.tlpgecg.mongodb.net/";
 
 export default dbConfigUrl
